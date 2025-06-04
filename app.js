@@ -59,3 +59,48 @@ name: String
 age: Number
 
 */
+
+
+/*
+SECOND PART:
+
+MAKE THE DATABASE CONNECTION:
+
+Initialize Mongoose and MongoDB Connection
+1. Set up Mongoose in your application.
+2. Ensure you have a .env file for your MongoDB URI and a .gitignore file 
+to avoid pushing sensitive data to GitHub.
+
+*/
+
+
+/*
+THIRD PART:
+
+DEVELOPING THE USER INTERFACE:
+
+1. Start by displaying a welcome message to the user
+2. Implement a simple menu system that lets the user choose an action 
+(Create, View, Update, Delete, Quit). Use prompt-sync to get the user’s choice & handle it accordingly.
+3. When figuring out what the user wants to do, it’s probably easiest to prompt them to choose from 
+various options in a numbered list. This way, the user just enters a number and the application knows 
+what to do next.
+4. When dealing with choosing a specific customer to update or delete, it’s probably easiest to list 
+the customers in the database along with their ids. Then prompt the user to enter id of the user that 
+needs to be updated/deleted.
+
+*/
+
+
+/*
+4th - 10th parts:
+
+FOURTH PART: Starting the application
+FIFTH PART: Sample exchange - Starting the Application
+SIXTH PART: Sample exchange - Updating a customer
+SEVENTH PART: Sample exchange - Choosing next action
+EIGHTH PART: Sample exchange - Viewing updated customers
+NINTH PART: Sample exchange - Choosing next action
+TENTH PART: Sample exchange - Exiting the application
+
+*/
