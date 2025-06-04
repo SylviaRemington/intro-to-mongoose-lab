@@ -19,7 +19,6 @@
 
 
 /* INFO ON WHAT WE ARE DOING IN THIS EXERCISE SO THAT I'M CLEARER:
-
 Your CRM (Customer Relationship Management) application is a simple program that lets you 
 manage customer information through a text-based menu in the terminal. Imagine it like a digital notebook for 
 keeping track of customers’ names and ages. You’ll use a tool called MongoDB to store this information safely, 
@@ -42,11 +41,13 @@ making it easy to manage customers without needing to understand the complex cod
 
 */
 
+
 const prompt = require('prompt-sync')();
 
 const username = prompt('What is your name? ');
 
 console.log(`Your name is ${username}`);
+
 
 
 /*
