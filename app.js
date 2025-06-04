@@ -4,9 +4,11 @@
 // to create a terminal-based CRM application that will have full CRUD functionality 
 // on a single model: Customer.
 
+
 // Adding/Installing a dependency/package called prompt-sync
 // Prompt-sync is a package that allows us to easily collect input from a user in the terminal. 
 // This is how we will interact with our application. (npm i prompt-sync)
+
 
 // To ensure prompt-sync is working, I added the code below. 
 // But I also tested it using node by typing the following in the terminal:
@@ -14,6 +16,7 @@
 // --I responded: "Sylvia" 
 // --The terminal responded: "Your name is Sylvia"
 // Thus, WORKING! Yay.
+
 
 /* INFO ON WHAT WE ARE DOING IN THIS EXERCISE SO THAT I'M CLEARER:
 
