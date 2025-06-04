@@ -21,3 +21,15 @@ const prompt = require('prompt-sync')();
 const username = prompt('What is your name? ');
 
 console.log(`Your name is ${username}`);
+
+
+/*
+FIRST PART:
+
+DEFINE THE MODEL:
+1. Create a new model file and build the customer schema.
+2. The customer model will have the following fields:
+name: String
+age: Number
+
+*/
