@@ -42,6 +42,7 @@ making it easy to manage customers without needing to understand the complex cod
 */
 
 
+
 const prompt = require('prompt-sync')();
 
 const username = prompt('What is your name? ');
