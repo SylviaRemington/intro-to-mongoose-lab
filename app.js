@@ -58,6 +58,7 @@ console.log(Customer);
 
 
 
+
 /*
 FIRST PART: ✅
 DEFINE THE MODEL: 
