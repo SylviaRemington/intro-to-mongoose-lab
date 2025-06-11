@@ -51,28 +51,24 @@ const prompt = require('prompt-sync')();
 // const username = prompt('What is your name? ');
 // console.log(`Your name is ${username}! Yay!`);
 
+const Customer = require('./models/customer.js');
+
 
 
 
 
 /*
-FIRST PART:
-
-DEFINE THE MODEL:
+FIRST PART: ✅
+DEFINE THE MODEL: 
 1. Create a new model file and build the customer schema.//might need to tweak the customer.js schema and correct it
 2. The customer model will have the following fields:
 name: String
 age: Number
-
 */
-
-
 
 /*
 SECOND PART:
-
 MAKE THE DATABASE CONNECTION:
-
 Initialize Mongoose and MongoDB Connection
 1. Set up Mongoose in your application.
 2. Ensure you have a .env file for your MongoDB URI and a .gitignore file 
