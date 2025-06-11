@@ -57,7 +57,7 @@ console.log(`Your name is ${username}! Yay!`);
 FIRST PART:
 
 DEFINE THE MODEL:
-1. Create a new model file and build the customer schema.
+1. Create a new model file and build the customer schema.//might need to tweak the customer.js schema and correct it
 2. The customer model will have the following fields:
 name: String
 age: Number
