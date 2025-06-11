@@ -52,6 +52,7 @@ const prompt = require('prompt-sync')();
 // console.log(`Your name is ${username}! Yay!`);
 
 const Customer = require('./models/customer.js');
+console.log(Customer);
 
 
 
