@@ -40,6 +40,7 @@ You’ll type answers to prompts in the terminal, and the program handles the re
 making it easy to manage customers without needing to understand the complex coding details behind it.
 
 */
+
 const dotenv = require('dotenv'); //allows access to the environment variable file and allows us to read stuff from that file
 dotenv.config(); //adds env variable to the node environment
 const mongoose = require('mongoose'); //requiring mongoose cause it translates between node and mongoDB
