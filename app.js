@@ -43,11 +43,13 @@ making it easy to manage customers without needing to understand the complex cod
 
 const dotenv = require('dotenv'); //allows access to the environment variable file and allows us to read stuff from that file
 dotenv.config(); //adds env variable to the node environment
+console.log(process.env.PORT);//This allows the application to access the env
+
 const mongoose = require('mongoose'); //requiring mongoose cause it translates between node and mongoDB
 
 const prompt = require('prompt-sync')();
-const username = prompt('What is your name? ');
-console.log(`Your name is ${username}! Yay!`);
+// const username = prompt('What is your name? ');
+// console.log(`Your name is ${username}! Yay!`);
 
 
 
