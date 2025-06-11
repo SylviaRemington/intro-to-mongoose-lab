@@ -32,9 +32,9 @@ Prompt-sync is a package that allows us to easily collect input from a user in t
 // --The terminal responded: "Your name is Sylvia! Yay!"
 // Thus, WORKING! Yay.
 
+<br>
 
-### INFO ON WHAT WE ARE DOING IN THIS EXERCISE SO THAT I'M CLEARER:
-/* 
+## INFO ON WHAT WE ARE DOING IN THIS EXERCISE SO THAT I'M CLEARER:
 Your CRM (Customer Relationship Management) application is a simple program that lets you 
 manage customer information through a text-based menu in the terminal. Imagine it like a digital notebook for 
 keeping track of customers’ names and ages. You’ll use a tool called MongoDB to store this information safely, 
@@ -54,5 +54,3 @@ another runs the main program with the menu and actions,
 and a settings file keeps your database address private. 
 You’ll type answers to prompts in the terminal, and the program handles the rest, 
 making it easy to manage customers without needing to understand the complex coding details behind it.
-
-*/
