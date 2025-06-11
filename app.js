@@ -73,7 +73,6 @@ Initialize Mongoose and MongoDB Connection
 1. Set up Mongoose in your application.
 2. Ensure you have a .env file for your MongoDB URI and a .gitignore file 
 to avoid pushing sensitive data to GitHub.
-
 */
 
 
