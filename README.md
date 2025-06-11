@@ -18,14 +18,14 @@ Objective: A Customer Relationship Management (CRM) tool is an application that 
 
 ## Notes from JS Section (so I understand the lab better)
 ### Intro to Mongoose Lab Objective:
-// A Customer Relationship Management (CRM) tool is an application that allows a company to keep track of their customers. In this lab. you’re going to create a terminal-based CRM application that will have full CRUD functionality on a single model: Customer.
+A Customer Relationship Management (CRM) tool is an application that allows a company to keep track of their customers. In this lab. you’re going to create a terminal-based CRM application that will have full CRUD functionality on a single model: Customer.
 
 
 ### Adding/Installing a dependency/package called prompt-sync
-// Prompt-sync is a package that allows us to easily collect input from a user in the terminal. This is how we will interact with our application. (npm i prompt-sync)
+Prompt-sync is a package that allows us to easily collect input from a user in the terminal. This is how we will interact with our application. (npm i prompt-sync)
 
 
-// To ensure prompt-sync is working, I added the code below. 
+// To ensure prompt-sync is working, I added the code within the app.js file. 
 // But I also tested it using node by typing the following in the terminal:
 // node app.js --The terminal then prompted me: "What is your name?" 
 // --I responded: "Sylvia" 
@@ -33,7 +33,8 @@ Objective: A Customer Relationship Management (CRM) tool is an application that 
 // Thus, WORKING! Yay.
 
 
-/* INFO ON WHAT WE ARE DOING IN THIS EXERCISE SO THAT I'M CLEARER:
+### INFO ON WHAT WE ARE DOING IN THIS EXERCISE SO THAT I'M CLEARER:
+/* 
 Your CRM (Customer Relationship Management) application is a simple program that lets you 
 manage customer information through a text-based menu in the terminal. Imagine it like a digital notebook for 
 keeping track of customers’ names and ages. You’ll use a tool called MongoDB to store this information safely, 
