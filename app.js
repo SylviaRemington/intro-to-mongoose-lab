@@ -58,7 +58,7 @@ const mainMenu = async () => {
         const name = prompt('Enter customer name: ');
         const age = parseInt(prompt('Enter customer age: '));
         await Customer.create({ name, age });
-        console.log('Customer created!');
+        console.log('Your new customer is created!');
     } else if (choice === '2') {
         const customers = await Customer.find();
         customers.forEach(c => console.log(`ID: ${c._id} -- Name: ${c.name}, Age: ${c.age}`));
@@ -67,11 +67,11 @@ const mainMenu = async () => {
         const name = prompt('Enter new name: ');
         const age = parseInt(prompt('Enter new age: '));
         await Customer.findByIdAndUpdate(id, { name, age });
-        console.log('Customer updated!');
+        console.log('Your customer is updated!');
     } else if (choice === '4') {
         const id = prompt('Enter customer ID to delete: ');
         await Customer.findByIdAndDelete(id);
-        console.log('Customer deleted!');
+        console.log('Customer deleted. Bye bye, customer');
     } else if (choice === '5') {
         console.log('Exiting as per your request.');
         mongoose.connection.close();
