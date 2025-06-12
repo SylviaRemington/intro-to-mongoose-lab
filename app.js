@@ -40,10 +40,10 @@ const connect = async () => {
 const main = async () => {
   await connect();  // connecting first
   console.log("👋 Welcome to the Customer App!");  // then showing the menu
-  // you’ll add your menu code here later
+  // Adding the menu code here in a sec
 };
 
-main(); // ✅ start everything
+main(); 
 
 
 /*
