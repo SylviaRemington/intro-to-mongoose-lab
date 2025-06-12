@@ -62,6 +62,7 @@ const mainMenu = async () => {
     } else if (choice === '2') {
         const customers = await Customer.find();
         customers.forEach(c => console.log(`ID: ${c._id} -- Name: ${c.name}, Age: ${c.age}`));
+        console.log('This is a list of all your current customers above.');
     } else if (choice === '3') {
         const id = prompt('Enter customer ID to update: ');
         const name = prompt('Enter new name: ');
@@ -71,7 +72,7 @@ const mainMenu = async () => {
     } else if (choice === '4') {
         const id = prompt('Enter customer ID to delete: ');
         await Customer.findByIdAndDelete(id);
-        console.log('Customer deleted. Bye bye, customer');
+        console.log('Customer deleted. Bye bye, customer and all your info!');
     } else if (choice === '5') {
         console.log('Exiting as per your request.');
         mongoose.connection.close();
