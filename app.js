@@ -21,7 +21,7 @@ console.log(Customer);
 // Requiring express
 const express = require('express');
 
-// Connect to Mongoose
+// Connect to Mongoose & mongoDB Database
 const connect = async () => {
     await mongoose.connect(process.env.MONGODB_URI);
     console.log('Connecting to mongoDB');
