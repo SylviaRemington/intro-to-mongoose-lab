@@ -36,18 +36,17 @@ Prompt-sync is a package that allows us to easily collect input from a user in t
 
 ## INFO ON WHAT WE ARE DOING IN THIS EXERCISE SO THAT I'M CLEARER:
 
-🟢 GOAL:
+### 🟢 GOAL:
 You want your app to:
-Connect to the database
-Show the menu
-Let the user pick an action
+- Connect to the database
+- Show the menu
+- Let the user pick an action
 
-Also here is further information for me:
-✅ What the Files Are Doing
-File	        What it Does
-app.js	        Main program: shows menu, takes input, runs actions
-customer.js	    Defines what a customer is (name, age)
-.env	        Stores your MongoDB connection info
+### ✅ What the Files Are Doing
+- File	        What it Does
+- app.js	        Main program: shows menu, takes input, runs actions
+- customer.js	    Defines what a customer is (name, age)
+- .env	        Stores your MongoDB connection info
 
 Your CRM (Customer Relationship Management) application is a simple program that lets you 
 manage customer information through a text-based menu in the terminal. Imagine it like a digital notebook for keeping track of customers’ names and ages. You’ll use a tool called MongoDB to store this information safely, like a filing cabinet, and Node.js to run the program on your computer. The program will ask you what you want to do—add a new customer, look at all customers, change a customer’s details, delete a customer, or quit—and 
