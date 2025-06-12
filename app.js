@@ -121,8 +121,9 @@ needs to be updated/deleted.
 
 
 /*
-4th - 10th parts:
+4th - 10th parts (FROM LAB EXERCISE PAGE):
 
+Practicing in terminal and making sure it works...
 FOURTH PART: Starting the application
 FIFTH PART: Sample exchange - Starting the Application
 SIXTH PART: Sample exchange - Updating a customer
@@ -131,6 +132,8 @@ EIGHTH PART: Sample exchange - Viewing updated customers
 NINTH PART: Sample exchange - Choosing next action
 TENTH PART: Sample exchange - Exiting the application
 
+ADDITIONALLY, WENT THROUGH EACH ACTION OF CREATE, VIEW, UPDATE, DELETE, AND QUIT
+TO MAKE SURE WORKING... & IT WORKS!
 */
 
 
