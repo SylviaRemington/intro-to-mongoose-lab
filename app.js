@@ -41,20 +41,25 @@ making it easy to manage customers without needing to understand the complex cod
 
 */
 
+//Best to put dotenv at top per Tristan
+// Requiring dotenv
 const dotenv = require('dotenv'); //allows access to the environment variable file and allows us to read stuff from that file
 dotenv.config(); //adds env variable to the node environment
 console.log(process.env.PORT);//This allows the application to access the env
 
+// Requiring mongoose
 const mongoose = require('mongoose'); //requiring mongoose cause it translates between node and mongoDB
 
+// Requiring prompt-sync
 const prompt = require('prompt-sync')();
-// const username = prompt('What is your name? ');
-// console.log(`Your name is ${username}! Yay!`);
+// const username = prompt('What is your name? '); // commented out because just used to test if working
+// console.log(`Your name is ${username}! Yay!`); // commented out because just used to test if working
 
+// Requiring customer.js file so can connect that to this app.js file
 const Customer = require('./models/customer.js');
 console.log(Customer);
 
-
+// Connect to Mongoose
 
 
 
