@@ -15,7 +15,7 @@ const username = prompt('What is your name? ');
 console.log(`Your name is ${username}! Yay!`); 
 
 // Requiring customer.js file so can connect that to this app.js file
-const Customer = require('./models/customer.js');
+const Customer = require('./models/customer.js'); //importing and connecting app.js with customer.js
 console.log(Customer); //making sure customer.js is connected correctly - output is Model { Customer }
 
 // Requiring express
