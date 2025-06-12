@@ -11,5 +11,5 @@ const customerSchema = new mongoose.Schema ({
 // Compiling the schema into a model (2nd step after creating schema) // A model talks to the database.
 const Customer = mongoose.model('Customer', customerSchema);
 
-// Exporting the model
+// Exporting the model so that the app.js and customer.js are connected
 module.exports = Customer;
