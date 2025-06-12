@@ -37,7 +37,7 @@ const connect = async () => {
 };
 
 // Starting function with main - research shows me that in coding most coders name the starting function main by default (to mean "start here")
-// Changed to mainMenu since makes more sense because we are creating a simple menu system for create, view, update, delete, quit
+// Changed to mainMenu since makes more sense because we are creating a simple menu system for create, view, update, delete, quit.
 const mainMenu = async () => {
   await connect();  // connecting first
   console.log("Welcome to your Customer Information App!");  // then showing the menu
@@ -113,10 +113,9 @@ THIRD PART:
 ✅3. When figuring out what the user wants to do, it’s probably easiest to prompt them to choose from 
 various options in a numbered list. This way, the user just enters a number and the application knows 
 what to do next.
-4. When dealing with choosing a specific customer to update or delete, it’s probably easiest to list 
+✅4. When dealing with choosing a specific customer to update or delete, it’s probably easiest to list 
 the customers in the database along with their ids. Then prompt the user to enter id of the user that 
 needs to be updated/deleted.
-
 */
 
 
