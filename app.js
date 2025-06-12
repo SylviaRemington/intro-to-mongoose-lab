@@ -37,7 +37,8 @@ const connect = async () => {
 };
 
 // Starting function with main - research shows me that in coding most coders name the starting function main by default (to mean "start here")
-const main = async () => {
+// Changed to mainMenu since makes more sense because we are creating a simple menu system for create, view, update, delete, quit
+const mainMenu = async () => {
   await connect();  // connecting first
   console.log("Welcome to your Customer Information App!");  // then showing the menu
   // Adding the menu code here in a sec
@@ -53,7 +54,7 @@ const main = async () => {
   }
 };
 
-main(); 
+mainMenu(); 
 
 
 /*
