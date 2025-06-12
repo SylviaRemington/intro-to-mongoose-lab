@@ -16,7 +16,7 @@ console.log(`Your name is ${username}! Yay!`);
 
 // Requiring customer.js file so can connect that to this app.js file
 const Customer = require('./models/customer.js');
-console.log(Customer);
+console.log(Customer); //making sure customer.js is connected correctly - output is Model { Customer }
 
 // Requiring express
 // const express = require('express');
