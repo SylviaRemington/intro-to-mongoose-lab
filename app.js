@@ -45,12 +45,40 @@ const mainMenu = async () => {
 
   let running = true;
   while (running) {
-    console.log('What action would you like to take?');
+    console.log('\nWhat action would you like to take?');
     console.log('1. Create a customer');
     console.log('2. View all customers');
     console.log('3. Update a customer');
     console.log('4. Delete a customer');
-    console.log('5. Quit');
+    console.log('5. Quit\n');
+    
+    const choice = prompt('Choose an option (1-5): ');
+
+    if (choice === '1') {
+        const name = prompt('Enter customer name: ');
+        const age = parseInt(prompt('Enter customer age: '));
+        await Customer.create({ name, age });
+        console.log('Customer created!');
+    } else if (choice === '2') {
+        const customers = await Customer.find();
+        customers.forEach(c => console.log(`ID: ${c._id} -- Name: ${c.name}, Age: ${c.age}`));
+    } else if (choice === '3') {
+        const id = prompt('Enter customer ID to update: ');
+        const name = prompt('Enter new name: ');
+        const age = parseInt(prompt('Enter new age: '));
+        await Customer.findByIdAndUpdate(id, { name, age });
+        console.log('Customer updated!');
+    } else if (choice === '4') {
+        const id = prompt('Enter customer ID to delete: ');
+        await Customer.findByIdAndDelete(id);
+        console.log('Customer deleted!');
+    } else if (choice === '5') {
+        console.log('Exiting as per your request.');
+        mongoose.connection.close();
+        break;
+    } else {
+        console.log('Invalid choice. Please, try again.');
+    }
   }
 };
 
@@ -77,11 +105,11 @@ to avoid pushing sensitive data to GitHub.
 
 /*
 THIRD PART:
-DEVELOPING THE USER INTERFACE:
-1. Start by displaying a welcome message to the user
-2. Implement a simple menu system that lets the user choose an action 
+✅DEVELOPING THE USER INTERFACE:
+✅1. Start by displaying a welcome message to the user
+✅2. Implement a simple menu system that lets the user choose an action 
 (Create, View, Update, Delete, Quit). Use prompt-sync to get the user’s choice & handle it accordingly.
-3. When figuring out what the user wants to do, it’s probably easiest to prompt them to choose from 
+✅3. When figuring out what the user wants to do, it’s probably easiest to prompt them to choose from 
 various options in a numbered list. This way, the user just enters a number and the application knows 
 what to do next.
 4. When dealing with choosing a specific customer to update or delete, it’s probably easiest to list 
