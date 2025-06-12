@@ -3,7 +3,7 @@
 //Best to put dotenv at top per Tristan
 // Requiring dotenv
 const dotenv = require('dotenv'); //allows access to the environment variable file and allows us to read stuff from that file
-dotenv.config(); //adds env variable to the node environment
+dotenv.config(); //adds env variable to the node environment //loads variables from .env
 console.log(process.env.PORT);//This allows the application to access the env
 
 // Requiring mongoose
@@ -11,49 +11,55 @@ const mongoose = require('mongoose'); //requiring mongoose cause it translates b
 
 // Requiring prompt-sync
 const prompt = require('prompt-sync')();
-// const username = prompt('What is your name? '); // commented out because just used to test if working
-// console.log(`Your name is ${username}! Yay!`); // commented out because just used to test if working
+const username = prompt('What is your name? '); 
+console.log(`Your name is ${username}! Yay!`); 
 
 // Requiring customer.js file so can connect that to this app.js file
 const Customer = require('./models/customer.js');
 console.log(Customer);
 
 // Requiring express
-const express = require('express');
+// const express = require('express');
+
 
 // Connect to Mongoose & mongoDB Database
 const connect = async () => {
+    // Connect to MongoDB using the MONGODB_URI specified in our .env file.
     await mongoose.connect(process.env.MONGODB_URI);
-    console.log('Connecting to mongoDB');
-}
+    console.log('Connected to mongoDB');
 
+    // Disconnect our app from MongoDB after our queries run.
+    // await mongoose.disconnect();
+    // console.log('Disconnected from MongoDB');
+
+    // Close our app, bringing us back to the command line.
+    // process.exit();
+};
+
+connect();
 
 
 /*
 FIRST PART: ✅
-DEFINE THE MODEL: 
-1. Create a new model file and build the customer schema.//might need to tweak the customer.js schema and correct it
-2. The customer model will have the following fields:
-name: String
-age: Number
+✅DEFINE THE MODEL: 
+✅1. Create a new model file and build the customer schema.//might need to tweak the customer.js schema and correct it
+✅2. The customer model will have the following fields:
+✅name: String
+✅age: Number
 */
 
 /*
 SECOND PART:
-MAKE THE DATABASE CONNECTION:
-Initialize Mongoose and MongoDB Connection
-1. Set up Mongoose in your application.
-2. Ensure you have a .env file for your MongoDB URI and a .gitignore file 
+✅MAKE THE DATABASE CONNECTION:
+✅Initialize Mongoose and MongoDB Connection
+✅1. Set up Mongoose in your application.
+✅2. Ensure you have a .env file for your MongoDB URI and a .gitignore file 
 to avoid pushing sensitive data to GitHub.
 */
 
-
-
 /*
 THIRD PART:
-
 DEVELOPING THE USER INTERFACE:
-
 1. Start by displaying a welcome message to the user
 2. Implement a simple menu system that lets the user choose an action 
 (Create, View, Update, Delete, Quit). Use prompt-sync to get the user’s choice & handle it accordingly.

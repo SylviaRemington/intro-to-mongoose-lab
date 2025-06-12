@@ -36,17 +36,10 @@ Prompt-sync is a package that allows us to easily collect input from a user in t
 
 ## INFO ON WHAT WE ARE DOING IN THIS EXERCISE SO THAT I'M CLEARER:
 Your CRM (Customer Relationship Management) application is a simple program that lets you 
-manage customer information through a text-based menu in the terminal. Imagine it like a digital notebook for 
-keeping track of customers’ names and ages. You’ll use a tool called MongoDB to store this information safely, 
-like a filing cabinet, and Node.js to run the program on your computer. The program will ask you what you want 
-to do—add a new customer, look at all customers, change a customer’s details, delete a customer, or quit—and 
+manage customer information through a text-based menu in the terminal. Imagine it like a digital notebook for keeping track of customers’ names and ages. You’ll use a tool called MongoDB to store this information safely, like a filing cabinet, and Node.js to run the program on your computer. The program will ask you what you want to do—add a new customer, look at all customers, change a customer’s details, delete a customer, or quit—and 
 then guide you through each step with clear prompts.
 
-Here’s how it works: When you start the program with node app.js, it connects to MongoDB and shows a 
-welcome message with a menu of five options. For example, choosing “Create a customer” asks for a name and age, 
-then saves it to the database. Selecting “View all customers” lists everyone with their IDs, names, and ages. 
-To update or delete, you’ll see the customer list, copy an ID, and enter new details or confirm deletion. 
-Choosing “Quit” safely closes the program and the database connection.
+Here’s how it works: When you start the program with node app.js, it connects to MongoDB and shows a welcome message with a menu of five options. For example, choosing “Create a customer” asks for a name and age, then saves it to the database. Selecting “View all customers” lists everyone with their IDs, names, and ages. To update or delete, you’ll see the customer list, copy an ID, and enter new details or confirm deletion. Choosing “Quit” safely closes the program and the database connection.
 
 The code is split into files: 
 one defines what a customer looks like (name and age), 
@@ -54,3 +47,16 @@ another runs the main program with the menu and actions,
 and a settings file keeps your database address private. 
 You’ll type answers to prompts in the terminal, and the program handles the rest, 
 making it easy to manage customers without needing to understand the complex coding details behind it.
+
+🟢 GOAL:
+You want your app to:
+Connect to the database
+Show the menu
+Let you pick an action
+
+Also here is further information for me:
+✅ What the Files Are Doing
+File	        What it Does
+app.js	        Main program: shows menu, takes input, runs actions
+customer.js	    Defines what a customer is (name, age)
+.env	        Stores your MongoDB connection info
