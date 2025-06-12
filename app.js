@@ -41,6 +41,16 @@ const main = async () => {
   await connect();  // connecting first
   console.log("Welcome to your Customer Information App!");  // then showing the menu
   // Adding the menu code here in a sec
+
+  let running = true;
+  while (running) {
+    console.log('What action would you like to take?');
+    console.log('1. Create a customer');
+    console.log('2. View all customers');
+    console.log('3. Update a customer');
+    console.log('4. Delete a customer');
+    console.log('5. Quit');
+  }
 };
 
 main(); 
