@@ -1,2 +1,10 @@
-node_modules
+# ignoring the node modules which are the installed programs/dependencies
+# ignoring them makes it so that they aren't pushed to github & others can just download if use program
+node_modules 
+
+# not putting environment variables in due to password and login
+# also ignoring env variables because they aren't part of the code and are just worked with by changing if production or development phase
 .env
+
+# as per tristan ds store is a mac thing and it's good to ignore cause it's just addtl files
+.DS_Store (macOS)
