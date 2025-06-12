@@ -19,7 +19,7 @@ const Customer = require('./models/customer.js');
 console.log(Customer); //making sure customer.js is connected correctly - output is Model { Customer }
 
 // Requiring express
-// const express = require('express');
+// const express = require('express'); //realized after-the-fact that this particular lab doesn't require express so didn't install dependencies
 
 
 // Connect to Mongoose & mongoDB Database
@@ -28,11 +28,11 @@ const connect = async () => {
     await mongoose.connect(process.env.MONGODB_URI);
     console.log('Connected to mongoDB');
 
-    // Disconnect our app from MongoDB after our queries run.
-    // await mongoose.disconnect();
+    // Disconnect our app from MongoDB after our queries run. //I originally thought I needed this because I was taking this info from our lecture.
+    // await mongoose.disconnect(); //I originally thought that you had to always write the code to connect and disconnect from Mongoose.
     // console.log('Disconnected from MongoDB');
 
-    // Close our app, bringing us back to the command line.
+    // Close our app, bringing us back to the command line. //I originally thought I needed this because I was taking this info from our lecture.
     // process.exit();
 };
 
@@ -121,7 +121,7 @@ needs to be updated/deleted.
 
 
 /*
-4th - 10th parts (FROM LAB EXERCISE PAGE):
+✅4th - 10th parts (FROM LAB EXERCISE PAGE):
 
 Practicing in terminal and making sure it works...
 FOURTH PART: Starting the application
@@ -132,7 +132,7 @@ EIGHTH PART: Sample exchange - Viewing updated customers
 NINTH PART: Sample exchange - Choosing next action
 TENTH PART: Sample exchange - Exiting the application
 
-ADDITIONALLY, WENT THROUGH EACH ACTION OF CREATE, VIEW, UPDATE, DELETE, AND QUIT
+✅ADDITIONALLY, WENT THROUGH EACH ACTION OF CREATE, VIEW, UPDATE, DELETE, AND QUIT
 TO MAKE SURE WORKING... & IT WORKS!
 */
 
