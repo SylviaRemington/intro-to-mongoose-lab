@@ -1,4 +1,5 @@
-//INTRO TO MONGOOSE LAB
+// INTRO TO MONGOOSE LAB
+// I've added lots of notes to help with reviewing once I come back to this lab for further study & understanding.
 
 //Best to put dotenv at top per Tristan
 // Requiring dotenv
